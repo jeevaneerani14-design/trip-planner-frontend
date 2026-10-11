@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-The frontend expects the Spring Boot API at `http://localhost:8080/api` by default. Set `VITE_API_URL` in a local `.env` file to use a different API URL.
+The frontend expects the Spring Boot API at `http://localhost:8080/api` by default. Set `VITE_API_URL` in a local `.env` file to use a different API URL. You can set it to the backend origin (for example, `https://your-backend.onrender.com`) or include `/api`; the frontend adds `/api` when it is missing. After login, the JWT is kept in session storage and sent as a Bearer token on API requests so authenticated routes work across separate frontend and backend hosts.
 
 ## Trip itinerary suggestions
 
